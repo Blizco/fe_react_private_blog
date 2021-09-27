@@ -1,14 +1,17 @@
 import React from 'react';
-import { useParams } from 'react-router-dom'
+import {useParams} from 'react-router-dom'
+import posts from '../data/posts.json';
 
 function BlogpostPage() {
-    const { id } = useParams();
+    let {blogId} = useParams();
 
     return (
         <>
-            <h1>Inlog Pagina met {id}</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto aut, autem debitis doloribus esse
-                obcaecati optio? Eius, libero, quod.</p>
+            <article>
+                <h1>{posts[blogId - 1].title}</h1>
+                <h2>{posts[blogId - 1].date}</h2>
+                <h3>{posts[blogId - 1].content}</h3>
+            </article>
         </>
     );
 }

@@ -55,7 +55,7 @@ p {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 h4 {
@@ -96,4 +96,21 @@ ul {
 
 .active-link {
     border-bottom: 2px solid white;
+    color: white;
+}
+
+article {
+    width: 600px;
+    padding: 40px;
+    border: 2px solid lightgrey;
+    margin-top: 100px;
+    margin-left: 100px;
+    justify-content: center;
+}
+
+.blog-titles {
+    margin-left: 40px;
+    color: #CA5B1A !important;
+    text-decoration: underline;
+    text-decoration-color: #CA5B1A !important;
 }
