@@ -1,6 +1,6 @@
 import React from 'react';
 import posts from '../data/posts.json';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function OverviewPage() {
 
@@ -8,10 +8,10 @@ function OverviewPage() {
 
     const blogTitles = posts.map((post) => {
         return (
-            <section key={post.id}>
+            <section key={ post.id }>
                 <li>
-                    <Link to={`/blog/${post.id}`}>
-                        <h3>{post.title}</h3>
+                    <Link to={ `/blog/${post.id}` }>
+                        <h3>{ post.title }</h3>
                     </Link>
                 </li>
             </section>
@@ -21,8 +21,8 @@ function OverviewPage() {
     return (
         <>
             <h1>Blog Overzichtspagina</h1>
-            <h2>Aantal blogposts: {amountBlogs}</h2>
-            {blogTitles}
+            <h2>Aantal blogposts: { amountBlogs }</h2>
+            { blogTitles }
 
         </>
     );

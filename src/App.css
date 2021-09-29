@@ -112,3 +112,24 @@ section {
 h5 {
     font-size: 20px;
 }
+
+label {
+    display: block;
+    margin: 24px 16px;
+}
+
+select {
+    display: block;
+    margin: 12px 0 0 0;
+}
+
+input {
+    margin: 0 0 0 8px;
+}
+
+
+fieldset {
+    border: 2px solid #ededed;
+    border-radius: 4px;
+    margin: 16px 0;
+}
