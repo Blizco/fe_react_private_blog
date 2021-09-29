@@ -1,25 +1,26 @@
 import React from 'react';
-import {Link, useHistory} from "react-router-dom";
+import { useHistory } from "react-router-dom";
+import Button from "../components/Button";
 
-function LoginPage() {
+function LoginPage({ inlog, toggleInlog }) {
     const history = useHistory();
 
-    function handleClick() {
-        history.push("/blogposts");
-    }
+function toLogin() {
+    toggleInlog (inlog = true);
+    history.push("/");
+}
 
     return (
         <>
             <h1>Login pagina</h1>
             <h2>Druk op de knop om in te loggen</h2>
-            <button type="button"
-                    onClick={handleClick}>
+                <Button clickHandler={toLogin}>
                 Inloggen
-            </button>
+            </Button>
 
 
         </>
     );
-};
+}
 
 export default LoginPage;

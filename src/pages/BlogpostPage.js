@@ -10,7 +10,7 @@ function BlogpostPage() {
             <article>
                 <h1>{posts[blogId - 1].title}</h1>
                 <h2>{posts[blogId - 1].date}</h2>
-                <h3>{posts[blogId - 1].content}</h3>
+                <h5>{posts[blogId - 1].content}</h5>
             </article>
         </>
     );
